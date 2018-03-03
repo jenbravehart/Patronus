@@ -285,7 +285,7 @@ Welcome, welcome! Welcome all to Care of Magical Creatures. While we all miss ou
 
 
 <div id="students" class="part">
-<h1> Students: Term #; <b>Last updated MONTH DAY YEAR</b></h1>
+<h1> Students: Term #; <b>Last updated MARCH 5TH 2018</b></h1>
 <center><br><br><table width="90%"><tr><th>Member
 </th><th>House
 </th><th>Lesson 1

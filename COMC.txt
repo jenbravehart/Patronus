@@ -1,0 +1,405 @@
+<style>
+table {
+	background: none;
+}
+table a img, .sf {
+	display: none;
+}
+body, th, td {
+	text-align: justify;
+	font: 8pt arial;
+}
+th {
+	color: #9aa532;
+	background: #e9fad1;
+	letter-spacing: 1px;
+	text-align: center;
+	font: 7pt arial;
+	padding: 2px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+td {
+	text-align: center;
+}
+body {
+	background: url("http://i.imgur.com/YxzdkKC.png") #2e1801 top center repeat-x fixed;
+}
+h1 {
+	color: #3c6661;
+	font: 12px courier new;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 12px;
+	background-color: #f4f0a2;
+	text-transform: lowercase;
+}
+h2 {
+	color: #5d4d5a;
+	font: 24px georgia;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 1px;
+	text-align: center;
+	font-style: italic;
+	text-transform: lowercase;
+}
+b {
+	color: #9aa532;
+	font-weight: bold;
+}
+i {
+	color: #db9e1d;
+	font-family: times new roman;
+	font-size: 12px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+a:link, a:active, a:visited {
+	color: #454452;
+	font: 7pt tahoma;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #9aa532;
+	text-decoration: none;
+}
+.nav:link, .nav:active, .nav:visited {
+	color: #ffffff;
+	font: 7pt arial;
+	display: inline-block;
+	padding: 15px;
+	background: #db9e1d;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+.nav:hover {
+	color: #d5e352;
+}
+img {
+	margin: 3px;
+	background: transparent;
+	padding: 2px;
+	border: 1px transparent solid;
+}
+#container {
+	width: 1000px;
+	margin: auto;
+	margin-top: 0;
+}
+#header {
+	background: url("http://i.imgur.com/08emNLC.png");
+	width: 980px;
+	height: 360px;
+	margin-top: 30px;
+	margin-left: 0px;
+}
+#links {
+	margin-top: -35px;
+	margin-left: 0px;
+	width: 980px;
+	overflow: auto;
+	padding: 8px;
+	text-align: center;
+	height: 240px;
+}
+#navbg {
+	margin-top: -30px;
+	margin-left: 0px;
+	width: 980px;
+	overflow: auto;
+	padding: 0px;
+	text-align: center;
+	height: 50px;
+	background: #db9e1d;
+}
+#bar {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 980px;
+	overflow: auto;
+	padding: 0px;
+	text-align: center;
+	background: #db9e1d;
+	height: 35px;
+	color: #ffffff;
+	font-size: 7pt;
+	cursor: default;
+}
+#main {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 980px;
+	overflow: auto;
+	padding: 0px;
+	background-color: #ffffff;
+	color: #000;
+	cursor: default;
+}
+#message {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+}
+.body {
+	padding: 2px;
+	height: 490px;
+	overflow: hidden;
+	background-color: transparent;
+}
+.part {
+	padding: 2px;
+	height: 490px;
+	overflow: auto;
+}
+#bgside {
+	background: #dcd3d1;
+}
+#bg {
+	background: #e3d3ce;
+}
+#desc {
+	background-color: #e6d4cf;
+	margin-bottom: 6px;
+	height: 62px;
+	padding: 2px;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#aff {
+	background-color: #e6d4cf;
+	margin-bottom: 6px;
+	height: 73px;
+	padding: 2px;
+	overflow: auto;
+	border-right: 1px solid #000;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#graphic {
+	background-color: #e6d4cf;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 6px;
+	margin-right: 4px;
+	padding: 2px;
+}
+.dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	background-color: #db9e1d;
+}
+.dropdown-content a {
+	display: block;
+	font: 7pt arial;
+	text-decoration: none;
+	margin: 5px;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: left;
+	width: 120px;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+</style><div id="container">
+
+
+<div id="navbg" style="position: fixed;">
+</div>
+<div id="links" style="position: fixed;">
+<div class="dropdown" style="position: relative;">
+<a href="#lessonone" class="nav">Available Lessons</a>
+  <div class="dropdown-content" style="position: absolute;">
+     <a href="#lessonone">Intro: Beasts, Beings, & Between</a>
+     <a href="#lessontwo">Not a Log, a DUGBOG</a>
+     <a href="#lessonthree">Behold the Lethifold</a>
+     <a href="#lessonfour">Ghoul School</a>
+</div></div>
+
+<div class="dropdown" style="position: relative;">
+<a href="#homeworkone" class="nav">Current Homework</a>
+  <div class="dropdown-content" style="position: absolute;">
+     <a href="#homeworkone">Intro: Beasts, Beings, & Between</a>
+     <a href="#homeworktwo">Not a Log, a DUGBOG</a>
+     <a href="#homeworkthree">Behold the Lethifold</a>
+     <a href="#homeworkfour">Ghoul School</a>
+</div></div>
+
+<div class="dropdown" style="position: relative;">
+<a href="#students" class="nav">Students</a></div>
+
+
+<div class="dropdown" style="position: relative;">
+<a href="/~Joesln" class="nav">Explore</a>
+  <div class="dropdown-content" style="position: absolute;">
+     <a href="/guilds/guild.phtml?id=4176524">The Castle</a>
+     <a href="/~Joesln">School Grounds</a>
+     <a href="/~Dieloa">Knight Bus</a>
+</div></div>
+
+<div class="dropdown" style="position: relative;">
+<a href="/userlookup.phtml?user=jenbravehart" class="nav">Send an Owl</a>
+<div class="dropdown-content" style="position: absolute;">
+     <a href="/userlookup.phtml?user=jenbravehart">Professor's Lookup</a>
+     <a href="/neomessages.phtml?type=send&recipient=jenbravehart&subject=COMC">Send an Owl</a>
+</div></div>
+
+<div class="dropdown" style="position: relative;">
+<a href="#clear" class="nav">Clear</a></div>
+
+</div>
+<div id="header"></div>
+<div id="bar"><br>
+WELCOME TO CARE OF MAGICAL CREATURES! OUR MOST RECENT UPDATE WAS ON: MARCH 5TH, 2018 </div>
+
+
+<div id="main">
+<div class="body">
+<a name="clear"></a>
+
+
+<div class="part">
+<div style="float: right; height: 160px; overflow: hidden; background: #ffffff;">
+<center>
+<table width="300"><tr><th colspan="4" width="300">PASSING GRADES</th></tr><tr><td></td><td style="text-align: left;" width="200">Outstanding (O)</td><td style="text-align: right;" width="70">25HP, 5HC</td><td></td></tr><tr><td></td><td style="text-align: left;" width="200">Exceeds Expectations (E)</td><td style="text-align: right;" width="70">20HP, 4HC</td><td></td></tr><tr><td></td><td style="text-align: left;" width="200">Acceptable (A)</td><td style="text-align: right;" width="70">15HP, 3HC</td><td></td></tr><tr></tr><tr><th colspan="4" width="300">FAILING GRADES</th></tr><tr><td></td><td style="text-align: left;" width="200">Poor (P)</td><td style="text-align: right;" width="70">10HP, 2HC</td><td></td></tr><tr><td></td><td style="text-align: left;" width="200">Dreadful (D)</td><td style="text-align: right;" width="70">5HP, 1HC</td><td></td></tr><tr><td></td><td style="text-align: left;" width="200">Troll (T)</td><td style="text-align: right;" width="70">0HP, 0HC</td><td></td></tr></table></center>
+</div>
+
+<h1>introduction</h1><br>
+Welcome, welcome! Welcome all to Care of Magical Creatures. While we all miss our beloved Professor Mel, I do hope that you will find me a worthy replacement. I taught Care of Magical Creatures many moons ago, and while I am not exactly sure where Professor Mel left off, I am a firm believer that the best place to begin is the beginning! With that being said, we 
+</div>
+
+
+
+
+
+
+
+<div id="students" class="part">
+<h1> Students: Term #; <b>Last updated MONTH DAY YEAR</b></h1>
+<center><br><br><table width="90%"><tr><th>Member
+</th><th>House
+</th><th>Lesson 1
+</th><th>Lesson 2
+</th><th>Lesson 3
+</th><th>Lesson 4
+</th></tr><tr><td>Name (<a href="/userlookup.phtml?user=username">username</a>)</td><td>House</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Name (<a href="/userlookup.phtml?user=username">username</a>)</td><td>House</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Name (<a href="/userlookup.phtml?user=username">username</a>)</td><td>House</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></table></center></div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="lessonone" class="part">
+<h1>lesson one: coming soon!</h1>
+<br>
+Lesson one goes here!
+</div>
+
+
+
+
+
+
+
+<div id="lessontwo" class="part">
+<h1>lesson two: coming soon!</h1>
+<br>
+Lesson two goes here!
+</div>
+
+
+
+
+
+
+
+<div id="lessonthree" class="part">
+<h1>lesson three: coming soon!</h1>
+<br>
+Lesson three goes here!
+</div>
+
+
+
+
+
+
+
+<div id="lessonfour" class="part">
+<h1>lesson four: coming soon!</h1>
+<br>
+Lesson four goes here!
+</div>
+
+
+
+
+
+
+
+<div id="homeworkone" class="part">
+<h1>homework one: coming soon!</h1>
+<br>
+homework one goes here!
+</div>
+
+
+
+
+
+
+
+<div id="homeworktwo" class="part">
+<h1>homework two: coming soon!</h1>
+<br>
+homework two goes here!
+</div>
+
+
+
+
+
+
+
+<div id="homeworkthree" class="part">
+<h1>homework three: coming soon!</h1>
+<br>
+homework three goes here!
+</div>
+
+
+
+
+
+
+
+<div id="homeworkfour" class="part">
+<h1>homework four: coming soon!</h1>
+<br>
+homework four goes here!
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
